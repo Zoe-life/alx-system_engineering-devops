@@ -1,2 +1,2 @@
 #!/bin/bash
-'NR % 2 == 1' "$1"
+while read -r line; do printf "%s\n" "$line"; read -r; done < "$1"
