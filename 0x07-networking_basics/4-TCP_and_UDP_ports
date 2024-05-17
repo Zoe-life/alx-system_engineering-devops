@@ -1,4 +1,4 @@
-#!usr/bin/env bash
+#!/usr/bin/env bash
 #this is a scripts that displays active listening ports
 
 netstat -1
