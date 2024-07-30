@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 
+"""
+This script fetches an employee's TODO list from the
+JSONPlaceholder API and prints it to the standard output.
+"""
+
 import requests
 
 

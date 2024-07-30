@@ -1,5 +1,11 @@
-import requests
+#!/usr/bin/python3
+
+"""
+This script fetches an employee's TODO list and exports it to a CSV file.
+"""
+
 import csv
+import requests
 
 
 def export_to_csv(employee_id):
@@ -17,8 +23,8 @@ def export_to_csv(employee_id):
     employee_name = user_data.get('name', 'Unknown')
 
     # Fetch employee's todos
-    todos_url = f"https://jsonplaceholder.typicode.com/todos?userId={employee_id}"
-    todos_response = requests.get(todos_url)
+    t_url = f"https://jsonplaceholder.typicode.com/todos?userId={employee_id}"
+    todos_response = requests.get(t_url)
     todos = todos_response.json()
 
     # Create CSV file

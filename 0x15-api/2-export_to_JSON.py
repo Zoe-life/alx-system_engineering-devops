@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 
-import requests
+"""
+This script fetches an employee's TODO list and exports it to a JSON file
+"""
+
 import json
+import requests
 
 
 def export_to_json(employee_id):
