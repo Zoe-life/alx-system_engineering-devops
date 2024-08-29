@@ -31,8 +31,8 @@ def recurse(subreddit, hot_list=[], after=None):
     LONG_PARAMS = f"?limit=100&allow_over18=true"
     BASE_URL = "https://www.reddit.com/r/"
     url = (
-            f"{BASE_URL}{subreddit}/hot.json{LONG_PARAMS}"
-            + (f"&after={after}" if after else "")
+            f"{BASE_URL}{subreddit}/hot.json{LONG_PARAMS}"+
+            (f"&after={after}" if after else "")
             )
     headers = {'User-Agent': 'My Reddit Script 0.1'}  # Custom User-Agent
 
